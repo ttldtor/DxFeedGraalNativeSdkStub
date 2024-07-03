@@ -1,7 +1,7 @@
 // Copyright (c) 2024 Devexperts LLC.
 // SPDX-License-Identifier: MPL-2.0
 
-#include "dxfg_api.h"
+#include <dxfg_api.h>
 
 #if defined(__cplusplus)
 extern "C" {

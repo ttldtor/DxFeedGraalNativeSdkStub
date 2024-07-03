@@ -41,6 +41,7 @@ add_library(${PROJECT_NAME} SHARED library.cpp)
 add_library(dxfg ALIAS ${PROJECT_NAME})
 
 target_compile_definitions(${PROJECT_NAME} PUBLIC DXFG_VERSION="${DXFG_VERSION}")
+target_include_directories(${PROJECT_NAME} PUBLIC .)
 
 if (DXFG_INSTALL)
     include(GNUInstallDirs)
