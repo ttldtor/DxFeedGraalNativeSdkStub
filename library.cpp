@@ -13,6 +13,12 @@ extern "C" {
 struct __graal_isolate_t {};
 struct __graal_isolatethread_t {};
 
+#ifdef _WIN32
+#    ifndef NOMINMAX
+#        define NOMINMAX
+#    endif
+#endif
+
 #define INVALID_INT_RESULT_MINUS_ONE (-1)
 #define INVALID_INT_RESULT_MINUS_MIN (-std::numeric_limits<std::int32_t>::min())
 #define INVALID_PTR_RESULT_NULLPTR (nullptr)
